@@ -1,0 +1,196 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Softwares from '~/components/widgets/Softwares.astro';
+import Teams from '~/components/widgets/Teams.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+  callToAction={{ text: 'Check repositories', href: 'https://github.com/DOE-COMMS', icon: 'carbon:logo-github' }}
+  callToAction2={{ text: 'Learn more ', href: '/news', icon: 'carbon:result-new'  }}
+  >
+  <!-- callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
+  callToAction2={{ text: 'Learn more', href: '#features' }}
+  image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }} -->
+    <Fragment slot="title">
+      Center for Mesoscale Computational Materials Science
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <p>Supported as part of the <a class="text-sky-700" href="https://www.greencarcongress.com/2019/06/20190613-doe.html">Computational Materials Sciences Program</a> funded by the US Department of Energy, Office of Science, Basic Energy Sciences, under Award Number DE-SC0020145 </p>
+      <p>DOE Program Manager: Matthias Graf, <a class="text-sky-700" href="mailto:Matthias.Graf@science.doe.gov">Matthias.Graf@science.doe.gov</a></p>
+    </Fragment>
+  </Hero>
+
+
+  <!-- Features Widget *************** -->
+
+  <!-- subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae." -->
+  <Teams
+  highlight="Features"
+    title="Our Teams"
+    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    id="our-teams"
+    items={[
+      {
+        title: 'Long-Qing Chen\'s Group',
+        url: "https://sites.psu.edu/chengroup",
+        description:
+          'Long-Qing Chen\'s group develops phase-field models and software for understanding and predicting stability and evolution of mesoscale structures during electronic, structural, ferroelectric, and magnetic phase transitions of quantum and functional materials and their responses to thermal mechanical, electrical, and magnetic stimuli.',
+        background: '/assets/chen-group.jpg',
+      },
+      {
+        title: 'Jinchao Xu\'s Group',
+        url: "https://www.personal.psu.edu/jxx1/",
+        description:
+          'Jinchao Xu\'s group develops numerical algorithms and solvers, based on finite-element and multigrid methods and implement them, for solving a set of phase-field equations describing mesoscale structural evolution of quantum and functional materials, that will harness the full potential of DOE leadership computing facilities.',
+        background: '/assets/xu-group.png',
+      },
+    ]}
+  />
+
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Milestones towards exascale materials science simulations."
+    items={[
+      {
+        title: '2020 - 2023 <span class="font-medium">Phase 1</span>',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
+        icon: 'tabler:package',
+      },
+      {
+        title: '2021 <span class="font-medium">Add content</em>',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Now!',
+        icon: 'tabler:check',
+      },
+      {
+        title: 'Next stage <span class="font-medium">Customize styles</span>',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+        icon: 'tabler:paint',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/creativity.jpg'),
+      alt: 'Steps image',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Softwares
+    highlight="Features"
+    title="Software and Packages"
+    id="softwares"
+    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    items={[
+      [
+        {
+          title: 'Astro + Tailwind CSS Integration',
+          description:
+            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          icon: 'tabler:brand-tailwind',
+        },
+        {
+          title: 'Ready-to-use Components',
+          description:
+            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          icon: 'tabler:components',
+        },
+        {
+          title: 'Best Practices',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+          icon: 'tabler:list-check',
+        },
+      ],
+      [
+        {
+          title: 'Excellent Page Speed',
+          description:
+            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          icon: 'tabler:rocket',
+        },
+        {
+          title: 'Search Engine Optimization (SEO)',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+          icon: 'tabler:arrows-right-left',
+        },
+        {
+          title: 'Open to new ideas and contributions',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+          icon: 'tabler:bulb',
+        },
+      ],
+    ]}
+  />
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <LatestPosts
+    title="Find out more content in our Blog"
+    information={`The blog is used to display AstroWind documentation.
+			Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
+			Astro is a very interesting technology. Thanks.
+		`}
+    postIds={[
+      'get-started-website-with-astro-tailwind-css.md',
+      'how-to-customize-astrowind-to-your-brand.md',
+      'useful-resources-to-create-websites.md',
+      'astrowind-template-in-depth.md',
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    items={[
+      { name: 'Downloads', value: '132K' },
+      { name: 'Stars', value: '24.8K' },
+      { name: 'Forks', value: '10.3K' },
+      { name: 'Users', value: '48.4K' },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    callToAction={{
+      text: 'Follow us on Github',
+      href: 'https://github.com/DOE_COMMS',
+      icon: 'tabler:star',
+    }}
+  >
+    <Fragment slot="title">
+      Visit our <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Github organization</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Join the COMMS community <br class="hidden md:inline" />We welcome your contributions!
+    </Fragment>
+  </CallToAction>
+</Layout>
