@@ -1,6 +1,6 @@
 {
-  "name": "@onwidget/astrowind",
-  "description": "A template to make your website using Astro + Tailwind CSS.",
+  "name": "doe-comms.org",
+  "description": "The homepage for DOE COMMS center.",
   "version": "0.9.8",
   "private": true,
   "scripts": {
@@ -9,9 +9,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier -w .",
+    "prettier": "prettier -w .",
     "lint:eslint": "eslint . --ext .js,.ts,.astro",
-    "subfont": "subfont -ir --no-fallbacks --silent --root dist"
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@astrojs/image": "^0.14.1",
@@ -38,10 +38,10 @@
     "prettier-plugin-astro": "^0.8.0",
     "reading-time": "^1.5.0",
     "sharp": "^0.31.3",
-    "subfont": "^6.12.4",
     "svgo": "2.8.0",
     "tailwindcss": "^3.2.6",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "husky": "^8.0.0"
   },
   "engines": {
     "node": ">=16.12.0"

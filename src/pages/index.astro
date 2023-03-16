@@ -20,52 +20,57 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-  callToAction={{ text: 'Check repositories', href: 'https://github.com/DOE-COMMS', icon: 'carbon:logo-github' }}
-  callToAction2={{ text: 'Learn more ', href: '/news', icon: 'carbon:result-new'  }}
+    callToAction={{ text: 'Check repositories', href: 'https://github.com/DOE-COMMS', icon: 'carbon:logo-github' }}
+    callToAction2={{ text: 'Learn more ', href: '/news', icon: 'carbon:result-new' }}
   >
-  <!-- callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
+    <!-- callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
   callToAction2={{ text: 'Learn more', href: '#features' }}
   image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }} -->
-    <Fragment slot="title">
-      Center for Mesoscale Computational Materials Science
-    </Fragment>
+    <Fragment slot="title">Center for Mesoscale Computational Materials Science</Fragment>
 
     <Fragment slot="subtitle">
-      <p>Supported as part of the <a class="text-sky-700" href="https://www.greencarcongress.com/2019/06/20190613-doe.html">Computational Materials Sciences Program</a> funded by the US Department of Energy, Office of Science, Basic Energy Sciences, under Award Number DE-SC0020145 </p>
-      <p>DOE Program Manager: Matthias Graf, <a class="text-sky-700" href="mailto:Matthias.Graf@science.doe.gov">Matthias.Graf@science.doe.gov</a></p>
+      <p>
+        Supported as part of the <a
+          class="text-sky-700"
+          href="https://www.greencarcongress.com/2019/06/20190613-doe.html">Computational Materials Sciences Program</a
+        > funded by the US Department of Energy, Office of Science, Basic Energy Sciences, under Award Number DE-SC0020145
+      </p>
+      <p>
+        DOE Program Manager: Matthias Graf, <a class="text-sky-700" href="mailto:Matthias.Graf@science.doe.gov"
+          >Matthias.Graf@science.doe.gov</a
+        >
+      </p>
     </Fragment>
   </Hero>
-
 
   <!-- Features Widget *************** -->
 
   <!-- subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae." -->
   <Teams
-  highlight="Features"
+    highlight="Features"
     title="Our Teams"
     subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
     id="our-teams"
     items={[
       {
-        title: 'Long-Qing Chen\'s Group',
-        url: "https://sites.psu.edu/chengroup",
+        title: "Long-Qing Chen's Group",
+        url: 'https://sites.psu.edu/chengroup',
         description:
-          'Long-Qing Chen\'s group develops phase-field models and software for understanding and predicting stability and evolution of mesoscale structures during electronic, structural, ferroelectric, and magnetic phase transitions of quantum and functional materials and their responses to thermal mechanical, electrical, and magnetic stimuli.',
+          "Long-Qing Chen's group develops phase-field models and software for understanding and predicting stability and evolution of mesoscale structures during electronic, structural, ferroelectric, and magnetic phase transitions of quantum and functional materials and their responses to thermal mechanical, electrical, and magnetic stimuli.",
         background: '/assets/chen-group.jpg',
       },
       {
-        title: 'Jinchao Xu\'s Group',
-        url: "https://www.personal.psu.edu/jxx1/",
+        title: "Jinchao Xu's Group",
+        url: 'https://www.personal.psu.edu/jxx1/',
         description:
-          'Jinchao Xu\'s group develops numerical algorithms and solvers, based on finite-element and multigrid methods and implement them, for solving a set of phase-field equations describing mesoscale structural evolution of quantum and functional materials, that will harness the full potential of DOE leadership computing facilities.',
+          "Jinchao Xu's group develops numerical algorithms and solvers, based on finite-element and multigrid methods and implement them, for solving a set of phase-field equations describing mesoscale structural evolution of quantum and functional materials, that will harness the full potential of DOE leadership computing facilities.",
         background: '/assets/xu-group.png',
       },
     ]}
   />
 
-
   <!-- Steps Widget ****************** -->
-
+  <div id="milestones"></div>
   <Steps
     title="Milestones towards exascale materials science simulations."
     items={[
@@ -150,7 +155,7 @@ const meta = {
   />
 
   <!-- HighlightedPosts Widget ******* -->
-
+  <div id="news"></div>
   <LatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.

@@ -25,10 +25,10 @@ export const headerData = {
     {
       text: 'Highlights',
       href: '/highlights',
-    },    
+    },
   ],
 };
-  
+
 export const footerData = {
   links: [
     {
