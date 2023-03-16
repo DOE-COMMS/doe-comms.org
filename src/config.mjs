@@ -3,8 +3,8 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'COMMS',
 
-  origin: 'https://astrowind.vercel.app',
-  basePathname: '/',
+  origin: 'https://doe-comms.github.io',
+  basePathname: '/doe-comms.org/',
   trailingSlash: false,
 
   title: 'COMMS — Center for mesoscale computational materials science',

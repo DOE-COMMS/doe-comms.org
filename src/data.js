@@ -1,30 +1,30 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
       text: 'Our Teams',
-      href: '/#our-teams',
+      href: '#our-teams',
     },
     {
       text: 'Milstones',
-      href: '/#milestones',
+      href: '#milestones',
     },
     {
       text: 'Softwares',
-      href: '/#softwares',
+      href: '#softwares',
     },
     {
       text: 'News',
-      href: '/#news',
+      href: '#news',
     },
     {
       text: 'Publications',
-      href: '/publications',
+      href: 'publications',
     },
     {
       text: 'Highlights',
-      href: '/highlights',
+      href: 'highlights',
     },
   ],
 };
