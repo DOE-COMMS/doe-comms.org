@@ -24,13 +24,12 @@ specifiers:
   prettier: ^2.8.4
   prettier-plugin-astro: ^0.8.0
   reading-time: ^1.5.0
-  sharp: ^0.31.3
   svgo: 2.8.0
   tailwindcss: ^3.2.6
   typescript: ^4.9.5
 
 devDependencies:
-  '@astrojs/image': 0.14.1_astro@2.1.2+sharp@0.31.3
+  '@astrojs/image': 0.14.1_astro@2.1.2
   '@astrojs/mdx': 0.16.2_astro@2.1.2
   '@astrojs/partytown': 1.1.0
   '@astrojs/sitemap': 1.2.0
@@ -41,7 +40,7 @@ devDependencies:
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.7
   '@typescript-eslint/eslint-plugin': 5.54.1_4rfaf6mlw2mmutqjcopwvbftpu
   '@typescript-eslint/parser': 5.54.1_vgl77cfdswitgr47lm5swmv43m
-  astro: 2.1.2_sharp@0.31.3
+  astro: 2.1.2
   astro-compress: 1.1.35
   astro-icon: 0.8.0
   eslint: 8.36.0
@@ -53,7 +52,6 @@ devDependencies:
   prettier: 2.8.4
   prettier-plugin-astro: 0.8.0
   reading-time: 1.5.0
-  sharp: 0.31.3
   svgo: 2.8.0
   tailwindcss: 3.2.7
   typescript: 4.9.5
@@ -83,7 +81,7 @@ packages:
       { integrity: sha512-O8yPCyuq+PU9Fjht2tIW6WzSWiq8qDF1e8uAX2x+SOGFzKqOznp52UlDG2mSf+ekf0Z3R34sb64O7SgX+asTxg== }
     dev: true
 
-  /@astrojs/image/0.14.1_astro@2.1.2+sharp@0.31.3:
+  /@astrojs/image/0.14.1_astro@2.1.2:
     resolution:
       { integrity: sha512-tRswPnPJVqStGXh+5mWtvh7+qi+jABcGkm9BFdP2Hh8Ya8KAgO0ICPjDG3Fppcz5G2JIZ50B3ajXiyWuuRIQJw== }
     peerDependencies:
@@ -94,13 +92,12 @@ packages:
         optional: true
     dependencies:
       '@altano/tiny-async-pool': 1.0.2
-      astro: 2.1.2_sharp@0.31.3
+      astro: 2.1.2
       http-cache-semantics: 4.1.1
       image-size: 1.0.2
       kleur: 4.1.5
       magic-string: 0.27.0
       mime: 3.0.0
-      sharp: 0.31.3
     dev: true
 
   /@astrojs/language-server/0.28.3:
@@ -129,7 +126,7 @@ packages:
       astro: ^2.1.0
     dependencies:
       '@astrojs/prism': 2.1.0
-      astro: 2.1.2_sharp@0.31.3
+      astro: 2.1.2
       github-slugger: 1.5.0
       image-size: 1.0.2
       import-meta-resolve: 2.2.2
@@ -207,7 +204,7 @@ packages:
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
-      astro: 2.1.2_sharp@0.31.3
+      astro: 2.1.2
       autoprefixer: 10.4.14_postcss@8.4.21
       postcss: 8.4.21
       postcss-load-config: 4.0.1_postcss@8.4.21
@@ -246,7 +243,7 @@ packages:
     peerDependencies:
       astro: ^1.2.1 || ^2.0.0
     dependencies:
-      astro: 2.1.2_sharp@0.31.3
+      astro: 2.1.2
     dev: true
 
   /@astrolib/seo/0.3.0_astro@2.1.2:
@@ -255,7 +252,7 @@ packages:
     peerDependencies:
       astro: ^1.2.1 || ^2.0.0
     dependencies:
-      astro: 2.1.2_sharp@0.31.3
+      astro: 2.1.2
     dev: true
 
   /@babel/code-frame/7.18.6:
@@ -1591,7 +1588,7 @@ packages:
       svgo: 2.8.0
     dev: true
 
-  /astro/2.1.2_sharp@0.31.3:
+  /astro/2.1.2:
     resolution:
       { integrity: sha512-qxBIPHfFJhwNOxI2E96XrGrUM6lGkDRkDY8iqEJNFWPGP+t5yY5SWb8H+OdYUGopexy1GGjoY7SYQCzFBkt7iw== }
     engines: { node: '>=16.12.0', npm: '>=6.14.0' }
@@ -1643,7 +1640,6 @@ packages:
       rehype: 12.0.1
       semver: 7.3.8
       server-destroy: 1.0.1
-      sharp: 0.31.3
       shiki: 0.11.1
       slash: 4.0.0
       string-width: 5.1.2

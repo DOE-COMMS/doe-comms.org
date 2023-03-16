@@ -3,8 +3,8 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'COMMS',
 
-  origin: 'https://doe-comms.github.io',
-  basePathname: '/doe-comms.org/',
+  origin: 'https://doe-comms.pages.dev',
+  basePathname: '/',
   trailingSlash: false,
 
   title: 'COMMS — Center for mesoscale computational materials science',
