@@ -1,13 +1,13 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'COMMS',
+  name: 'DOE COMMS',
 
   origin: 'https://doe-comms.pages.dev',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'COMMS — Center for mesoscale computational materials science',
+  title: 'DOE COMMS — Center for mesoscale computational materials science',
   description:
     '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
   defaultImage: defaultImage,
@@ -38,7 +38,7 @@ const CONFIG = {
     },
 
     list: {
-      pathname: 'blog', // Blog main path, you can change this to "articles" (/articles)
+      pathname: 'highlights', // Blog main path, you can change this to "articles" (/articles)
       noindex: false,
       disabled: false,
     },
